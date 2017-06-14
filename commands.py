@@ -45,7 +45,7 @@ class GotoLastEditEnhanced(sublime_plugin.TextCommand):
         history. index =  index
         break
       else:
-        sublime_plugin.sublime.status_message('Already at the newest position.')
+        sublime_plugin.sublime.status_message('Already at the oldest position.')
     if is_lasted:
       sublime_plugin.sublime.status_message('Already at the latest position.')
 

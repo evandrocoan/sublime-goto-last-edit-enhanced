@@ -35,7 +35,7 @@ class GotoLastEditEnhanced(sublime_plugin.TextCommand):
     for index in history_range:
       regions = self.view.get_regions('goto_last_edit_' + str(index))
       if self.is_regions_equal(regions, self.view.sel()):
-       continue
+        continue
 
       is_lasted = False
       if len(regions) > 0:
@@ -43,7 +43,7 @@ class GotoLastEditEnhanced(sublime_plugin.TextCommand):
         self.view.sel().clear()
         self.view.sel().add_all(regions)
         self.view.show(regions[0])
-        history. index =  index
+        history.index = index
         break
       else:
         sublime_plugin.sublime.status_message('Already at the ' + ( 'oldest' if backward else 'newest' ) + ' position.')

@@ -42,3 +42,9 @@ go to last edit before last edit and etc.
 ### Dependencies
 
 None
+
+
+## License
+
+See the `LICENSE` file under this repository.
+

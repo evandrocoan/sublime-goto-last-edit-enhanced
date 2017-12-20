@@ -57,9 +57,9 @@ class GotoLastEditEnhanced(sublime_plugin.TextCommand):
         history. index =  index
         break
       else:
-        sublime_plugin.sublime.status_message('Already at the ' + ( 'oldest' if backward else 'newest' ) + ' position.')
+        sublime.status_message('Already at the ' + ( 'oldest' if backward else 'newest' ) + ' position.')
     if is_lasted:
-      sublime_plugin.sublime.status_message('Already at the' + ( 'newest' if backward else 'oldest' ) + 'position.')
+      sublime.status_message('Already at the' + ( 'newest' if backward else 'oldest' ) + 'position.')
 
   def is_regions_equal(self, regions_1, regions_2):
     if len(regions_1) != len(regions_2):

@@ -1,15 +1,7 @@
 [
-    {
-        "keys": ["alt+z"],
-        "command": "goto_last_edit_enhanced",
-    },
+    { "keys": ["shift+keypad_plus"], "command": "goto_last_edit_enhanced", },
+    { "keys": ["shift+keypad_minus"], "command": "goto_last_edit_enhanced",  "args": { "backward": true }, },
 
-    {
-        "keys": ["alt+shift+z"],
-        "command": "goto_last_edit_enhanced",
-        "args":
-        {
-            "backward": false
-        },
-    },
+    { "keys": ["shift+equals"], "command": "goto_last_edit_enhanced", },
+    { "keys": ["shift+minus"], "command": "goto_last_edit_enhanced",  "args": { "backward": true }, },
 ]

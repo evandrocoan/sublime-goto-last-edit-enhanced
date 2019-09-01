@@ -3,7 +3,7 @@ import sublime_plugin
 
 MAX_HIST_SIZE = 5000
 
-
+# https://github.com/SublimeTextIssues/Core/issues/1846
 class RegionsManager(object):
   def __init__(self):
     self.regions = {}
